@@ -1,0 +1,26 @@
+{
+	"name": "C# (.NET) with PostgreSQL & SQL Server",
+	"dockerComposeFile": "../docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash"
+			},
+			"extensions": [
+				"ms-dotnettools.csharp",
+				"ms-dotnettools.vscode-dotnet-runtime",
+				"ms-dotnettools.csdevkit",
+				"kreativ-software.csharpextensions",
+				"cweijan.vscode-database-client2",
+				"patcx.vscode-nuget-gallery",
+				"jmrog.vscode-nuget-package-manager"
+			]
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
+	"forwardPorts": [8082, 5433, 1433]
+}
