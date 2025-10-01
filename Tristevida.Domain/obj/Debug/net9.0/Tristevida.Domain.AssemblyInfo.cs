@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tristevida.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26248bbfbb2bfe9b5853b84aceaf652f048d8a6d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4acc89f3905d3d16fc7c6d5d7df75bd612a0e4e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tristevida.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tristevida.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

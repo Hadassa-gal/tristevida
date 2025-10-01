@@ -1,0 +1,16 @@
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\bin\Debug\net9.0\Tristevida.Application.deps.json
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\bin\Debug\net9.0\Tristevida.Application.dll
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\bin\Debug\net9.0\Tristevida.Application.pdb
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\bin\Debug\net9.0\Tristevida.Domain.dll
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\bin\Debug\net9.0\Tristevida.Domain.pdb
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\obj\Debug\net9.0\Tristevida.Application.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\obj\Debug\net9.0\Tristevida.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\obj\Debug\net9.0\Tristevida.Application.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\obj\Debug\net9.0\Tristevida.Application.AssemblyInfo.cs
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\obj\Debug\net9.0\Tristevida.Application.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\obj\Debug\net9.0\Tristevida.Application.sourcelink.json
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\obj\Debug\net9.0\Tristevi.0012F3F5.Up2Date
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\obj\Debug\net9.0\Tristevida.Application.dll
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\obj\Debug\net9.0\refint\Tristevida.Application.dll
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\obj\Debug\net9.0\Tristevida.Application.pdb
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Application\obj\Debug\net9.0\ref\Tristevida.Application.dll

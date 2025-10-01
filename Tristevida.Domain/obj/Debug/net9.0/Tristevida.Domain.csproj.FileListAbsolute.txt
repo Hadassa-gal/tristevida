@@ -1,0 +1,12 @@
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Domain\bin\Debug\net9.0\Tristevida.Domain.deps.json
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Domain\bin\Debug\net9.0\Tristevida.Domain.dll
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Domain\bin\Debug\net9.0\Tristevida.Domain.pdb
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Domain\obj\Debug\net9.0\Tristevida.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Domain\obj\Debug\net9.0\Tristevida.Domain.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Domain\obj\Debug\net9.0\Tristevida.Domain.AssemblyInfo.cs
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Domain\obj\Debug\net9.0\Tristevida.Domain.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Domain\obj\Debug\net9.0\Tristevida.Domain.sourcelink.json
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Domain\obj\Debug\net9.0\Tristevida.Domain.dll
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Domain\obj\Debug\net9.0\refint\Tristevida.Domain.dll
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Domain\obj\Debug\net9.0\Tristevida.Domain.pdb
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Domain\obj\Debug\net9.0\ref\Tristevida.Domain.dll
