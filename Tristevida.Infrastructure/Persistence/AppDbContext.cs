@@ -11,6 +11,15 @@ public sealed class AppDbContext(DbContextOptions<AppDbContext> options) : DbCon
     public DbSet<Cities> Cities => Set<Cities>();
     public DbSet<Companies> Companies => Set<Companies>();
     public DbSet<Branches> Branches => Set<Branches>();
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-        => modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
+     protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
+        modelBuilder.Entity<Companies>()
+            .OwnsOne(c => c.Ukniu, u =>
+            {
+                u.Property(x => x.Value).HasColumnName("Ukniu").IsRequired();
+            });
+
+        base.OnModelCreating(modelBuilder);
+    }
 }

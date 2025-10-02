@@ -16,7 +16,7 @@ public class BranchesRepository(AppDbContext db) : IBranchesRepository
         return await db.Branches.AsNoTracking().FirstOrDefaultAsync(b => b.Contact_Name == contactName, ct);
     }
 
-    public async Task<Branches?> GetByIdAsync(Guid id, CancellationToken ct = default)
+    public async Task<Branches?> GetByIdAsync(int id, CancellationToken ct = default)
     {
         return await db.Branches.AsNoTracking().FirstOrDefaultAsync(b => b.Id == id, ct);
     }
@@ -37,7 +37,7 @@ public class BranchesRepository(AppDbContext db) : IBranchesRepository
         db.Branches.Update(branch);
         await Task.CompletedTask;
     }
-    public async Task DeleteAsync(Guid id, CancellationToken ct = default)
+    public async Task DeleteAsync(int id, CancellationToken ct = default)
     {
         var branch = await db.Branches.FindAsync([id], ct);
         if (branch is not null)

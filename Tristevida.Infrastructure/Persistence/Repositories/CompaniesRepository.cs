@@ -9,7 +9,7 @@ namespace Tristevida.Infrastructure.Persistence.Repositories;
 public sealed class CompaniesRepository(AppDbContext db) : ICompaniesRepository
 {
 
-    public async Task<Companies> GetByIdAsync(Guid id, CancellationToken ct = default)
+    public async Task<Companies> GetByIdAsync(int id, CancellationToken ct = default)
     {
         var company = await db.Companies.AsNoTracking().FirstOrDefaultAsync(c => c.Id == id, ct);
         if (company == null)
@@ -62,7 +62,7 @@ public sealed class CompaniesRepository(AppDbContext db) : ICompaniesRepository
         return query.CountAsync(ct);
     }
 
-    public async Task DeleteAsync(Guid id, CancellationToken ct = default)
+    public async Task DeleteAsync(int id, CancellationToken ct = default)
     {
         var company = await db.Companies.FindAsync([id], ct);
         if (company is not null)

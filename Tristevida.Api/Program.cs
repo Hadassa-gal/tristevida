@@ -4,24 +4,26 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllers();
 
-// Swagger / OpenAPI
 builder.Services.AddEndpointsApiExplorer();
 
-// Extensiones personalizadas
 builder.Services.ConfigureCors();
 builder.Services.AddCustomRateLimiter();
 builder.Services.AddApplicationServices();
 
-// DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    string connectionString = builder.Configuration.GetConnectionString("Postgres")!;
-    options.UseNpgsql(connectionString);
+    var connectionString = builder.Configuration.GetConnectionString("Postgres")
+        ?? throw new InvalidOperationException("No se encontró la cadena de conexión 'Postgres'.");
+
+    options.UseNpgsql(connectionString, npgsqlOptions =>
+    {
+        npgsqlOptions.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName);
+    });
     options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 });
+string connectionString = builder.Configuration.GetConnectionString("Postgres")!;
 
 var app = builder.Build();
 

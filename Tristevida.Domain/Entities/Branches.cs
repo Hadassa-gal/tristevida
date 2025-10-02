@@ -4,7 +4,7 @@ namespace Tristevida.Domain.Entities;
 
 public class Branches
 {
-    public Guid Id { get; set; } = Guid.NewGuid();
+    public int Id { get; set; }
     public int Number_Comercial { get; set; } = 0;
     public string Address { get; set; } = null!;
     public string Email { get; set; } = null!;
