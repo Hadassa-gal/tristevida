@@ -8,10 +8,8 @@ namespace Tristevida.Infrastructure.Persistence.Repositories;
 public class BranchesRepository(AppDbContext db) : IBranchesRepository
 {
 
-    public Task<IEnumerable<Branches>> GetAllAsync(CancellationToken ct = default)
-    {
-        throw new NotImplementedException();
-    }
+    public async Task<IEnumerable<Branches>> GetAllAsync(CancellationToken ct = default)
+        => await db.Branches.AsNoTracking().ToListAsync(ct);
 
     public async Task<Branches?> GetByContactNameAsync(string contactName, CancellationToken ct = default)
     {

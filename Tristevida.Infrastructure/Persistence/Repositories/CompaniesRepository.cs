@@ -17,13 +17,6 @@ public sealed class CompaniesRepository(AppDbContext db) : ICompaniesRepository
         return company;
     }
 
-    public async Task<IReadOnlyList<Companies>> GetAllAsync(CancellationToken ct = default)
-    {
-        return await db.Companies
-            .AsNoTracking()
-            .OrderByDescending(p => p.Name)
-            .ToListAsync(ct);
-    }
 
     public async Task<Companies> GetByNameAsync(string name, CancellationToken ct = default)
     {
@@ -69,13 +62,16 @@ public sealed class CompaniesRepository(AppDbContext db) : ICompaniesRepository
         return query.CountAsync(ct);
     }
 
-    public Task DeleteAsync(Guid id, CancellationToken ct = default)
+    public async Task DeleteAsync(Guid id, CancellationToken ct = default)
     {
-        throw new NotImplementedException();
+        var company = await db.Companies.FindAsync([id], ct);
+        if (company is not null)
+        {
+            db.Companies.Remove(company);
+            await Task.CompletedTask;
+        }
     }
 
-    Task<IEnumerable<Companies>> ICompaniesRepository.GetAllAsync(CancellationToken ct)
-    {
-        throw new NotImplementedException();
-    }
+    public async Task<IEnumerable<Companies>> GetAllAsync(CancellationToken ct = default)
+        => await db.Companies.AsNoTracking().ToListAsync(ct);
 }

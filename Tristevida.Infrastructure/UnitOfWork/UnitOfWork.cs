@@ -10,6 +10,9 @@ public class UnitOfWork : IUnitOfWork
     private readonly AppDbContext _context;
     private ICompaniesRepository? _companiesRepository;
     private IBranchesRepository? _branchesRepository;
+    private ICitiesRepository? _citiesRepository;
+    private IRegionsRepository? _regionsRepository;
+    private ICountriesRepository? _countriesRepository;
     public UnitOfWork(AppDbContext context)
     {
         _context = context;
@@ -32,8 +35,11 @@ public class UnitOfWork : IUnitOfWork
         }
     }
     public IBranchesRepository Branches => _branchesRepository ??= new BranchesRepository(_context);
-
     public ICompaniesRepository Companies => _companiesRepository ??= new CompaniesRepository(_context);
+    public ICitiesRepository Cities => _citiesRepository ??= new CitiesRepository(_context);
+    public IRegionsRepository Regions => _regionsRepository ??= new RegionsRepository(_context);
+    public ICountriesRepository Countries => _countriesRepository ??= new CountriesRepository(_context);
+
 
 }
 

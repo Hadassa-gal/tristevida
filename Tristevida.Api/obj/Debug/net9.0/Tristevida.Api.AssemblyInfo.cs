@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tristevida.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4acc89f3905d3d16fc7c6d5d7df75bd612a0e4e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f812e54c3f164c42e5ff9f2893dff6fea24ff06")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tristevida.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tristevida.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
