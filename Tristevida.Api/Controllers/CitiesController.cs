@@ -44,7 +44,7 @@ public class CitiesController : BaseApiController
     {
         var city = _mapper.Map<Cities>(body);
         await _unitofwork.Cities.AddAsync(city, ct);
-
+        await _unitofwork.SaveChangesAsync(ct);
         var dto = _mapper.Map<CitiesDto>(city);
         return CreatedAtAction(nameof(GetById), new { id = dto.Id }, dto);
     }

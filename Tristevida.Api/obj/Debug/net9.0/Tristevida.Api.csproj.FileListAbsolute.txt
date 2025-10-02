@@ -145,3 +145,6 @@ C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Api\obj\Debug\net9.0\re
 C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Api\obj\Debug\net9.0\Tristevida.Api.pdb
 C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Api\obj\Debug\net9.0\Tristevida.Api.genruntimeconfig.cache
 C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Api\obj\Debug\net9.0\ref\Tristevida.Api.dll
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\HP\Desktop\Development-C#\tristevida\Tristevida.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

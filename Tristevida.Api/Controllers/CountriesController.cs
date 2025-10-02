@@ -44,6 +44,7 @@ public class CountriesController : BaseApiController
     {
         var country = _mapper.Map<Countries>(body);
         await _unitofwork.Countries.AddAsync(country, ct);
+        await _unitofwork.SaveChangesAsync(ct);
 
         var dto = _mapper.Map<CountriesDto>(country);
         return CreatedAtAction(nameof(GetById), new { id = dto.Id }, dto);

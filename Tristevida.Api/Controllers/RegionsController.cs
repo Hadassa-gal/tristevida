@@ -44,7 +44,8 @@ public class RegionsController : BaseApiController
     {
         var region = _mapper.Map<Regions>(body);
         await _unitofwork.Regions.AddAsync(region, ct);
-
+        await _unitofwork.SaveChangesAsync(ct);
+        
         var dto = _mapper.Map<RegionsDto>(region);
         return CreatedAtAction(nameof(GetById), new { id = dto.Id }, dto);
     }

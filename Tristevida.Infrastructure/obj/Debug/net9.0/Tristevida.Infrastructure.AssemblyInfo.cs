@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tristevida.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+034931c21b478722cb1cd86b16698587fb962881")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+891908105aa30e35be9ca7f132af9d3c30ef1f48")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tristevida.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tristevida.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
