@@ -22,9 +22,4 @@
     <ProjectReference Include="..\Tristevida.Infrastructure\Tristevida.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Extensions\" />
-    <Folder Include="Mappings\" />
-  </ItemGroup>
-
 </Project>
